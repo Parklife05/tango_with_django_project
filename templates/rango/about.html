@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-{% load mediafiles %} <!-- New line -->
+{% load staticfiles %} <!-- New line -->
 
 
 <html>
@@ -10,14 +10,18 @@
  </head>
  
 <body>
-<h1>Rango says here is the about page.</h1> 
+
 <div>
-This tutorial has been put together by James Park.
+This tutorial has been put together by James Park. <br /> 
 
 </div> 
-<div> <a href="/rango/index/">Index</a><br /> 
+ 
+<a href="/rango/index/">Index</a><br /> 
 
-<img src="{% media "media/cat.jpg" %}" alt="Picture of a cat." /> <!-- New line --> 
-</div> 
+<img src="{{ MEDIA_URL }}cat.jpg" 
+			alt = "Picture of a Cat." /> 
+
+
+
 </body>
 </html>
