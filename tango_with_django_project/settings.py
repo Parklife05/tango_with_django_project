@@ -35,6 +35,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# media files
+
+MEDIA_ROOT = '/Users/Dell/tango_with_django_project/media/'
+MEDIA_URL = 'http://localhost:8000/media/'
 
 # Application definition
 
@@ -125,10 +129,6 @@ USE_L10N = True
 USE_TZ = True
 
 
-# media files
-
-MEDIA_ROOT = MEDIA_DIR
-MEDIA_URL = '/media/'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/

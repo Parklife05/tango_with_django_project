@@ -9,8 +9,6 @@ def index(request):
    
 
 def about(request): 
-<<<<<<< HEAD
+
     return render(request, 'rango/about.html') 
-=======
-    return render(request, 'rango/about.html'   ) 
->>>>>>> 12abf14687108a0181cb3562614d2fc762b496aa
+
