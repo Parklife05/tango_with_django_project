@@ -24,7 +24,6 @@ from django.conf import settings
 urlpatterns = [
     url(r'^$', views.index, name='Index'),
     url(r'^rango/', include('rango.urls')),
-    url(r'^about/', views.about, name='About' ),
 
     # above maps any URLs starting
     # with rango/ to be handled by
