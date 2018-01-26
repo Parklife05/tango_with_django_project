@@ -22,7 +22,7 @@ from django.conf import settings
 
 
 urlpatterns = [
-    url(r'^$', views.index, name='Index'),
+    url(r'^$', views.index, name='index'),
     url(r'^rango/', include('rango.urls')),
 
     # above maps any URLs starting

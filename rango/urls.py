@@ -4,8 +4,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    url(r'^index/$', views.index, name='Index'),
-    url (r'^about/$',views.about, name = 'About')]
+    url(r'^index/$', views.index, name='index'),
+    url (r'^about/$',views.about, name = 'about')]
 
 
 
