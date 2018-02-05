@@ -21,10 +21,11 @@ class Category(models.Model):
     
 class Page(models.Model):
     
-    category = models.ForeignKey(Category)
+    category = models.ForeignKey(Category,on_delete=models.CASCADE,)
     title = models.CharField(max_length=128)
     url = models.URLField()
     views = models.IntegerField(default=0)
 
     def __unicode__(self): # For Python 2, use __unicode__ too
         return self.title
+
