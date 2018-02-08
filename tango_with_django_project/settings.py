@@ -98,6 +98,7 @@ DATABASES = {
 
 
 # Password validation
+
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -140,3 +141,5 @@ USE_TZ = True
 STATICFILES_DIRS = [STATIC_DIR,]
 
 STATIC_URL = '/static/'
+
+LOGIN_URL = '/rango/login/'
