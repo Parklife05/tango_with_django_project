@@ -40,7 +40,7 @@ ALLOWED_HOSTS = []
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 
-
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 # Application definition
 
 INSTALLED_APPS = [

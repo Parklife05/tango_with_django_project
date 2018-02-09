@@ -25,8 +25,7 @@
 		<ul>
 			{% for category in categories %}
 			    <li><a href="{% url 'show_category' category.slug %}">{{ category.name }}</a></li>
-
-	{% endfor %}
+		{% endfor %}
 </ul>
 {% else %}
 	<strong>There are no categories present.</strong>
@@ -35,7 +34,7 @@
 
 <div>
 <h2>Most viewed Pages</h2>
-
+<h3>Number of Visits: {{ visits }}</h3>
 {% if pages %}
 <ul>
 	{% for page in pages %}
